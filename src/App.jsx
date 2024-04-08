@@ -5,6 +5,7 @@ import { Navbar } from "./components/navbar.jsx"
 import './App.css'
 import { About } from './components/about'
 import { Navbar2 } from './components/Navbar2.jsx'
+import { OrdersSummary } from './components/OrdersSummary.jsx'
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           {/* then there are mainly two attributes path and element */}
           <Route path='/about' element={<About/>}/>
+          <Route path='/order-summary' element={<OrdersSummary/>}/>
 
           {/* the star stands for the 404 page in react router dom */}
           <Route path='*' element={<FourOFour/>}/>
