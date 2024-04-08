@@ -4,6 +4,7 @@ import { FourOFour } from "./components/error"
 import { Navbar } from "./components/navbar.jsx"
 import './App.css'
 import { About } from './components/about'
+import { Navbar2 } from './components/Navbar2.jsx'
 
 function App() {
   
@@ -13,6 +14,11 @@ function App() {
 
 
       <Navbar/>
+      <br />
+      <br />
+      <br />
+
+      <Navbar2/>
         <Routes>
 
           {/* so basically routes and then route */}
