@@ -32,7 +32,7 @@ function App() {
           <Route path='/order-summary' element={<OrdersSummary/>}/>
           <Route path='/products' element={<Products/>}>
             <Route path='featured' element={<Featured/>}/>
-            <Route path='newProduct' element={<NewProducts/>}/>
+            <Route path='newProducts' element={<NewProducts/>}/>
           </Route>
 
           {/* the star stands for the 404 page in react router dom */}
