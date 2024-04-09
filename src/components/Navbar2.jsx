@@ -33,7 +33,9 @@ export const Navbar2 = () => {
             <NavLink style={navLinkStyles} className=" mr-4 p-2" to="/"> Home </NavLink>
             <NavLink style={navLinkStyles} className=" p-2" to="/about"> About </NavLink>
 
-            <button onClick={goBack} className=" mr-4"> Go Back </button>
+            <NavLink className=" mx-8" to="/products">Products</NavLink>
+
+            <button onClick={goBack} className=" mx-4"> Go Back </button>
             <button onClick={exit}> Exit  </button>
         </h1>
     )

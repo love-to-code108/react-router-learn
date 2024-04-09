@@ -6,6 +6,9 @@ import './App.css'
 import { About } from './components/about'
 import { Navbar2 } from './components/Navbar2.jsx'
 import { OrdersSummary } from './components/OrdersSummary.jsx'
+import { Products } from './components/products.jsx'
+import { NewProducts } from './components/NewProducts.jsx'
+import { Featured } from './components/Featured.jsx'
 
 function App() {
   
@@ -27,6 +30,10 @@ function App() {
           {/* then there are mainly two attributes path and element */}
           <Route path='/about' element={<About/>}/>
           <Route path='/order-summary' element={<OrdersSummary/>}/>
+          <Route path='/products' element={<Products/>}>
+            <Route path='featured' element={<Featured/>}/>
+            <Route path='newProduct' element={<NewProducts/>}/>
+          </Route>
 
           {/* the star stands for the 404 page in react router dom */}
           <Route path='*' element={<FourOFour/>}/>
